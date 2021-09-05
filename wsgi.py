@@ -10,14 +10,14 @@ logging.basicConfig(stream=sys.stderr)
 sys.path.insert(0,"/var/www/vhosts/raydlee.org.uk/flask-twt.raydlee.org.uk/")
 sys.path.insert(1, '/var/www/vhosts/raydlee.org.uk/flask-twt.raydlee.org.uk/env-flask/bin/python3.8')
 
-#def application(environ, start_response):
-#    status = '200 OK'
-#    output = 'Hello World!'
+def application(environ, start_response):
+    status = '200 OK'
+    output = 'Hello World!'
 #	output += str(sys.version)
-#    response_headers = [('Content-type', 'text/plain'), ('Content-Length', str(len(output)))]
-#    start_response(status, response_headers)
-#    return [output]
-from website import app as application
+    response_headers = [('Content-type', 'text/plain'), ('Content-Length', str(len(output)))]
+    start_response(status, response_headers)
+    return [output]
+#from website import app as application
 #app = create_app()
 # app.secret_key = 'random text to be secured later'
 
