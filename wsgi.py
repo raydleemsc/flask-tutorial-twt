@@ -13,7 +13,7 @@ sys.path.insert(1, '/var/www/vhosts/raydlee.org.uk/flask-twt.raydlee.org.uk/env-
 def application(environ, start_response):
     status = '200 OK'
     output = 'Hello World!'
-#	output += str(sys.version)
+    output += str(sys.version)
     response_headers = [('Content-type', 'text/plain'), ('Content-Length', str(len(output)))]
     start_response(status, response_headers)
     return [output]
