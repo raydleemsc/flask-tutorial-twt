@@ -20,7 +20,7 @@ sys.path.insert(0, '/var/www/vhosts/raydlee.org.uk/flask-twt.raydlee.org.uk/env-
 #    response_headers = [('Content-type', 'text/plain'), ('Content-Length', str(len(output)))]
 #    start_response(status, response_headers)
 #    return [output]
-from website import app as application
+from website import flask_web_app as application
 #application = website.create_app()
 # app.secret_key = 'random text to be secured later'
 
