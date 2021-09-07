@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+from __future__ import absolute_import
 import os
 
 activate_this = '/var/www/vhosts/raydlee.org.uk/flask-twt.raydlee.org.uk/env-flask/bin/activate_this.py'
@@ -20,7 +21,7 @@ sys.path.insert(1, '/var/www/vhosts/raydlee.org.uk/flask-twt.raydlee.org.uk/env-
 #    start_response(status, response_headers)
 #    return [output]
 from website import app as application
-#app = create_app()
+#application = website.create_app()
 # app.secret_key = 'random text to be secured later'
 
 #if __name__ == '__main__':
