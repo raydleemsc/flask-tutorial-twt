@@ -2,3 +2,5 @@ website/__pycache__/*
 .gitignore
 website/database.db
 .tabnine.model
+flask/__pycache__/*
+flask/json/__pycache__/*
