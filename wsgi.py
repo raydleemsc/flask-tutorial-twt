@@ -11,7 +11,7 @@ import sys
 import logging
 logging.basicConfig(stream=sys.stderr)
 sys.path.insert(0,"/var/www/vhosts/raydlee.org.uk/flask-twt.raydlee.org.uk/")
-sys.path.insert(1, '/var/www/vhosts/raydlee.org.uk/flask-twt.raydlee.org.uk/env-flask/bin/python3.8')
+sys.path.insert(0, '/var/www/vhosts/raydlee.org.uk/flask-twt.raydlee.org.uk/env-flask/bin/python3.8')
 
 #def application(environ, start_response):
 #    status = '200 OK'
